@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    line-height: 1.2;
+    color: #333;
+}
+#nava{
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+}
+#nava-list{
+    display: flex;
+    justify-content: center;
+    padding: 0 15px 0 15px;
+    margin: auto 15px;
+}
+#nava-item {
+    display: flex;
+    color: black;
+    list-style: none;
+    padding: 0px 15px;
+    position: relative;
+}
+#nava-item ::after{
+    content: "";
+    height: 5px;
+    width: 0px;
+    background-color: black;
+    position: absolute;
+    bottom: -10px;
+    left: 15px;
+    transition: all 0.5s;
+}
+#nava-item:hover ::after{
+    width: 70%;
+}
+#nava-item a:link{
+    text-decoration: none;
+}
+#nava-item a:visited{
+    text-decoration: none;
+}
+
+#search{
+    background-color: rgb(182, 177, 177);
+    min-height: 50px;
+    width: 100%;
+   
+}
+ul#item{
+    margin-left: 310px;
+    list-style: none;
+}
+#s-item a:link{
+    text-decoration: none;
+}
+#s-item{
+    margin-top: 15px;
+}
+
